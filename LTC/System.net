@@ -1,0 +1,113 @@
+* Z:\home\mwismer\Dcuments\MADVLSI-Final\LTC\System.asc
+XX1 b0 b1 b2 N005 V+ 0 dac
+R1 Vds N001 100k
+D1 N001 V+ D
+R2 N002 N003 200k
+XX2 N001 N003 V+ 0 N002 Iin1 opamp
+XX3 N002 0 V+ 0 N004 Iin2 opamp
+R3 N003 0 200k
+V1 V+ 0 5
+V2 Vds 0 50mV
+V3 b0 0 0
+V4 b1 0 0
+V5 b2 0 0
+I1 V+ Iin1 10µA
+I2 V+ Iin2 10µA
+
+* block symbol definitions
+.subckt dac C B A Out V+ V-
+R9 V+ N003 10k
+R10 N003 N006 10k
+R11 N006 N009 10k
+R12 N009 N012 10k
+R13 N012 N015 10k
+R14 N015 N018 10k
+R15 N018 N021 10k
+R16 N021 V- 10k
+XX9 V+ V- A ~A inverter
+XX10 V+ V- B ~B inverter
+XX11 V+ V- C ~C inverter
+XX12 N021 Out N022 N023 V+ V- passgate
+XX13 N018 Out N019 N020 V+ V- passgate
+XX14 N015 Out N016 N017 V+ V- passgate
+XX15 N012 Out N013 N014 V+ V- passgate
+XX16 N009 Out N010 N011 V+ V- passgate
+XX17 N006 Out N007 N008 V+ V- passgate
+XX18 N003 Out N004 N005 V+ V- passgate
+XX19 V+ Out N001 N002 V+ V- passgate
+XX20 N001 N002 A B C V- V+ 3-n-and
+XX21 N004 N005 A B ~C V- V+ 3-n-and
+XX22 N007 N008 A ~B C V- V+ 3-n-and
+XX23 N010 N011 A ~B ~C V- V+ 3-n-and
+XX24 N013 N014 ~A B C V- V+ 3-n-and
+XX25 N016 N017 ~A B ~C V- V+ 3-n-and
+XX26 N019 N020 ~A ~B C V- V+ 3-n-and
+XX27 N022 N023 ~A ~B ~C V- V+ 3-n-and
+.ends dac
+
+.subckt opamp V1 V2 V+ V- Vout Iin
+XX2 V+ V- V1 Vbn Vcn Vcp Vbp V2 Vout fcdamp
+XX1 V- V+ Vbn Vbp Vcp Vcn Iin bias
+.ends opamp
+
+.subckt inverter V+ V- A ~A
+M1 ~A A V- V- nfet l=0.6um w=1.8um
+M2 ~A A V+ V+ pfet l=0.6um w=1.8um
+.ends inverter
+
+.subckt passgate In Out ~A A V+ V-
+M1 In A Out V- nfet l=0.6um w=1.8um
+M2 Out ~A In V+ pfet l=0.6um w=1.8um
+.ends passgate
+
+.subckt 3-n-and ~Z Z A B C V- V+
+M1 ~Z C N001 V- nfet l=0.6um w=1.8um
+M2 N001 B N002 V- nfet l=0.6um w=1.8um
+M3 N002 A V- V- nfet l=0.6um w=1.8um
+M4 ~Z A V+ V+ pfet l=0.6um w=1.8um
+M5 ~Z B V+ V+ pfet l=0.6um w=1.8um
+M6 ~Z C V+ V+ pfet l=0.6um w=1.8um
+M7 Z ~Z V+ V+ pfet l=0.6um w=1.8um
+M8 Z ~Z V- V- nfet l=0.6um w=1.8um
+.lib engr3426.sub
+.ends 3-n-and
+
+.subckt fcdamp V+ V- V1 Vbn Vcn Vcp Vbp V2 Vout
+M1 N002 Vbp V+ V+ pfet l=1.8um w=36um
+M2 N006 V1 N002 V+ pfet l=1.8um w=36um
+M3 N005 V2 N002 V+ pfet l=1.8um w=36um
+M4 Vout Vcp N004 V+ pfet l=1.8um w=36um
+M5 N004 N001 V+ V+ pfet l=1.8um w=36um
+M6 N001 Vcp N003 V+ pfet l=1.8um w=36um
+M7 N003 N001 V+ V+ pfet l=1.8um w=36um
+M8 Vout Vcn N005 V- nfet l=1.8um w=36um
+M9 N005 Vbn V- V- nfet l=1.8um w=36um
+M10 N001 Vcn N006 V- nfet l=1.8um w=36um
+M11 N006 Vbn V- V- nfet l=1.8um w=36um
+.ends fcdamp
+
+.subckt bias V- V+ Vbn Vbp Vcp Vcn Iin
+M1 V- Iin Vcp V- nfet l=1.8um w=36um
+M2 V- Iin Iin V- nfet l=1.8um w=36um
+M3 Iip Iin V- V- nfet l=1.8um w=36um
+M4 N002 Vbn V- V- nfet l=1.8um w=36um
+M5 Vbn Vbn N002 V- nfet l=1.8um w=36um
+M6 Vcn Vcn N002 V- nfet l=1.8um w=36um
+M7 Vbp Iin V- V- nfet l=1.8um w=1.8um
+M8 V+ Iip Iip V+ pfet l=1.8um w=36um
+M9 N001 Vcp Vcp V+ pfet l=1.8um w=36um
+M10 Vbn Iip V+ V+ pfet l=1.8um w=1.8um
+M11 Vcn Iip V+ V+ pfet l=1.8um w=36um
+M12 V+ Vbp N001 V+ pfet l=1.8um w=36um
+M13 N001 Vbp Vbp V+ pfet l=1.8um w=36um
+.ends bias
+
+.model D D
+.lib C:\Program Files (x86)\LTC\LTspiceIV\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Program Files (x86)\LTC\LTspiceIV\lib\cmp\standard.mos
+.lib engr3426.sub
+.tran 1ms
+.backanno
+.end
