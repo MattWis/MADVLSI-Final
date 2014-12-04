@@ -1,0 +1,22 @@
+timestamp 1415734680
+version 7.5
+tech scmos
+style AMI0.5um(amic5)from:T11Z
+scale 1000 1 30
+resistclasses 82400 102700 816000 816000 1 22300 41300 41300 90 90 60
+use Bias Bias_0 1 0 -262 0 1 255
+use FCDAmp FCDAmp_0 1 0 -28 0 1 92
+node "Gnd" 129 -502.2 -46 -2 poc 0 0 180 54 0 0 0 0 0 0 0 0 0 0 0 0 801 140 0 0 0 0
+node "a_n144_290#" 83 -44.64 -144 290 noc 16 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 264 70 0 0 0 0
+cap "Bias_0/Vdd" "Bias_0/Vdd" -2.13163e-14
+cap "Bias_0/Vcp" "Bias_0/Vdd" 2.84217e-14
+cap "Bias_0/Vdd" "Bias_0/Vbp" -4.26326e-14
+merge "FCDAmp_0/Vdd" "FCDAmp_0/V2" -446.4 -16 -16 0 0 -72 -216 0 0 0 0 0 0 0 0 0 0 -142 -61 0 0 0 0
+merge "FCDAmp_0/V2" "Bias_0/Vdd"
+merge "Bias_0/Vdd" "a_n144_290#"
+merge "FCDAmp_0/Vcn" "Bias_0/Vcn" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "FCDAmp_0/Vcp" "Bias_0/Vcp" -2.84217e-14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "FCDAmp_0/FGnd" "Gnd" 5.68434e-14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90 -54 0 0 0 0
+merge "Gnd" "Bias_0/a_78_n265#"
+merge "FCDAmp_0/Vbn" "Bias_0/Vbn" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "FCDAmp_0/Vbp" "Bias_0/Vbp" -7.10543e-14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 0 0 0 0

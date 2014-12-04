@@ -1,0 +1,50 @@
+* SPICE3 file created from Complete.ext - technology: scmos
+
+M1000 FCDAmp_0/a_n8_78# Bias_0/Vbp Bias_0/Vdd Bias_0/Vdd pfet w=36u l=1.8u
++ ad=1440p pd=504u as=1440p ps=504u 
+M1001 FCDAmp_0/a_4_n55# FCDAmp_0/a_n2_75# FCDAmp_0/a_n8_78# Bias_0/Vdd pfet w=36u l=1.8u
++ ad=720p pd=252u as=0p ps=0u 
+M1002 FCDAmp_0/a_28_n55# FCDAmp_0/V1 FCDAmp_0/a_n8_78# Bias_0/Vdd pfet w=36u l=1.8u
++ ad=720p pd=252u as=0p ps=0u 
+M1003 FCDAmp_0/a_52_78# Bias_0/Vcp FCDAmp_0/a_n8_n55# Bias_0/Vdd pfet w=36u l=1.8u
++ ad=720p pd=252u as=720p ps=252u 
+M1004 Bias_0/Vdd FCDAmp_0/a_n8_n55# FCDAmp_0/a_52_78# Bias_0/Vdd pfet w=36u l=1.8u
++ ad=0p pd=0u as=0p ps=0u 
+M1005 FCDAmp_0/a_76_78# FCDAmp_0/a_n8_n55# Bias_0/Vdd Bias_0/Vdd pfet w=36u l=1.8u
++ ad=720p pd=252u as=0p ps=0u 
+M1006 FCDAmp_0/Out Bias_0/Vcp FCDAmp_0/a_76_78# Bias_0/Vdd pfet w=36u l=1.8u
++ ad=720p pd=252u as=0p ps=0u 
+M1007 FCDAmp_0/a_4_n55# Bias_0/Vcn FCDAmp_0/a_n8_n55# Gnd nfet w=36u l=1.8u
++ ad=720p pd=252u as=720p ps=252u 
+M1008 Gnd Bias_0/Vbn FCDAmp_0/a_4_n55# Gnd nfet w=36u l=1.8u
++ ad=720p pd=252u as=0p ps=0u 
+M1009 FCDAmp_0/a_28_n55# Bias_0/Vbn Gnd Gnd nfet w=36u l=1.8u
++ ad=720p pd=252u as=0p ps=0u 
+M1010 FCDAmp_0/Out Bias_0/Vcn FCDAmp_0/a_28_n55# Gnd nfet w=36u l=1.8u
++ ad=720p pd=252u as=0p ps=0u 
+M1011 Bias_0/Vdd Bias_0/Iip Bias_0/Iip Bias_0/Vdd pfet w=36u l=1.8u
++ ad=1500p pd=536u as=720p ps=252u 
+M1012 Bias_0/Vcn Bias_0/Iip Bias_0/Vdd Bias_0/Vdd pfet w=36u l=1.8u
++ ad=720p pd=252u as=0p ps=0u 
+M1013 Bias_0/a_146_n101# Bias_0/Vcp Bias_0/Vcp Bias_0/Vdd pfet w=36u l=1.8u
++ ad=1440p pd=504u as=720p ps=252u 
+M1014 Bias_0/Vdd Bias_0/Vbp Bias_0/a_146_n101# Bias_0/Vdd pfet w=36u l=1.8u
++ ad=0p pd=0u as=0p ps=0u 
+M1015 Bias_0/Vbp Bias_0/Vbp Bias_0/a_146_n101# Bias_0/Vdd pfet w=36u l=1.8u
++ ad=720p pd=252u as=0p ps=0u 
+M1016 Bias_0/Vdd Bias_0/Iip Bias_0/Vbn Bias_0/Vdd pfet w=1.8u l=1.8u
++ ad=0p pd=0u as=36p ps=24u 
+M1017 Bias_0/Vbp Bias_0/Iin Gnd Gnd nfet w=1.8u l=1.8u
++ ad=36p pd=24u as=1500p ps=536u 
+M1018 Gnd Bias_0/Iin Bias_0/Iin Gnd nfet w=36u l=1.8u
++ ad=0p pd=0u as=720p ps=252u 
+M1019 Bias_0/Iip Bias_0/Iin Gnd Gnd nfet w=36u l=1.8u
++ ad=720p pd=252u as=0p ps=0u 
+M1020 Bias_0/a_128_n249# Bias_0/Vbn Bias_0/Vbn Gnd nfet w=36u l=1.8u
++ ad=1440p pd=504u as=720p ps=252u 
+M1021 Bias_0/a_128_n249# Bias_0/Vcn Bias_0/Vcn Gnd nfet w=36u l=1.8u
++ ad=0p pd=0u as=720p ps=252u 
+M1022 Gnd Bias_0/Vbn Bias_0/a_128_n249# Gnd nfet w=36u l=1.8u
++ ad=0p pd=0u as=0p ps=0u 
+M1023 Bias_0/Vcp Bias_0/Iin Gnd Gnd nfet w=36u l=1.8u
++ ad=720p pd=252u as=0p ps=0u 
