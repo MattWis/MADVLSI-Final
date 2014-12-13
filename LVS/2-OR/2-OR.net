@@ -1,34 +1,12 @@
-* Z:\home\mwismer\Repos\MADVLSI-Final\LTC\2-OR.asc
+* Z:\home\mwismer\Dcuments\MADVLSI-Final\LTC\2-OR.asc
+
 M2 N001 A V- V- nfet l=0.6um w=1.8um
-M5 N002 N001 V+ V+ pfet l=0.6um w=1.8um
+M5 N002 N001 V+ V+ pfet l=0.6um w=3.6um
 M6 N002 N001 V- V- nfet l=0.6um w=1.8um
 M1 V- B N001 V- nfet l=0.6um w=1.8um
 M3 N001 A N004 V+ pfet l=0.6um w=1.8um
 M4 V+ B N004 V+ pfet l=0.6um w=1.8um
-M7 N003 N002 V- V- nfet l=0.6um w=9um
-M9 N003 N002 V+ V+ pfet l=0.6um w=18um
-M8 Z N003 V- V- nfet l=0.6um w=9um
-M10 Z N003 V+ V+ pfet l=0.6um w=18um
-M11 Z N003 V- V- nfet l=0.6um w=9um
-M12 Z N003 V+ V+ pfet l=0.6um w=18um
-M13 Z N003 V- V- nfet l=0.6um w=9um
-M14 Z N003 V+ V+ pfet l=0.6um w=18um
-M15 Z N003 V- V- nfet l=0.6um w=9um
-M16 Z N003 V+ V+ pfet l=0.6um w=18um
-M17 Z N003 V- V- nfet l=0.6um w=9um
-M18 Z N003 V+ V+ pfet l=0.6um w=18um
-M19 Z N003 V- V- nfet l=0.6um w=9um
-M20 Z N003 V+ V+ pfet l=0.6um w=18um
-M21 Z N003 V- V- nfet l=0.6um w=9um
-M22 Z N003 V+ V+ pfet l=0.6um w=18um
-M23 Z N003 V- V- nfet l=0.6um w=9um
-M24 Z N003 V+ V+ pfet l=0.6um w=18um
-M25 Z N003 V- V- nfet l=0.6um w=9um
-M26 Z N003 V+ V+ pfet l=0.6um w=18um
-M27 Z N003 V- V- nfet l=0.6um w=9um
-M28 Z N003 V+ V+ pfet l=0.6um w=18um
-.model NMOS NMOS
-.model PMOS PMOS
-.lib C:\Program Files (x86)\LTC\LTspiceIV\lib\cmp\standard.mos
-.backanno
-.end
+M7 N003 N002 V- V- nfet l=0.6um w=18um
+M8 Z N003 V- V- nfet l=0.6um w=18um m=10
+M9 N003 N002 V+ V+ pfet l=0.6um w=36um
+M10 Z N003 V+ V+ pfet l=0.6um w=36um m=10
