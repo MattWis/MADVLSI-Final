@@ -1,29 +1,17 @@
 magic
 tech scmos
-timestamp 1418813110
+timestamp 1418833766
 << nwell >>
 rect 159 323 203 361
 rect 215 323 259 361
 rect 271 323 315 361
 << electrode >>
-rect 9 346 66 358
-rect 9 25 21 346
-rect 24 331 51 343
-rect 24 25 36 331
-rect 9 13 36 25
-rect 39 13 51 331
-rect 54 327 66 346
-rect 69 327 87 358
-rect 54 315 87 327
-rect 387 327 405 358
-rect 408 346 465 358
-rect 408 327 420 346
-rect 387 315 420 327
-rect 423 331 450 343
-rect 423 13 435 331
-rect 438 25 450 331
-rect 453 25 465 346
-rect 438 13 465 25
+rect 59 345 87 358
+rect 387 345 413 358
+rect 6 31 18 33
+rect 454 31 466 33
+rect 6 13 52 31
+rect 423 13 466 31
 << electrodecontact >>
 rect 70 346 86 357
 rect 389 348 403 356
@@ -786,6 +774,32 @@ rect 306 337 312 341
 rect 306 333 307 337
 rect 311 333 312 337
 rect 306 332 312 333
+<< high_resist >>
+rect 3 358 59 361
+rect 413 358 469 361
+rect 3 33 6 358
+rect 18 37 25 346
+rect 37 49 44 358
+rect 56 37 59 345
+rect 18 33 59 37
+rect 413 37 416 345
+rect 428 49 435 358
+rect 447 37 454 346
+rect 413 33 454 37
+rect 466 33 469 358
+<< poly2_high_resist >>
+rect 6 346 37 358
+rect 6 33 18 346
+rect 25 49 37 346
+rect 44 345 59 358
+rect 413 345 428 358
+rect 44 49 56 345
+rect 25 37 56 49
+rect 416 49 428 345
+rect 435 346 466 358
+rect 435 49 447 346
+rect 416 37 447 49
+rect 454 33 466 346
 use bondingpad  bondingpad_0
 timestamp 1259953556
 transform 1 0 107 0 1 0
