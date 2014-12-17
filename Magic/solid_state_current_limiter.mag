@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1418813962
+timestamp 1418814466
 << error_p >>
 rect 1562 3681 1564 3682
 << error_s >>
@@ -982,17 +982,21 @@ rect 4229 2526 4312 2808
 rect 4229 2508 4483 2526
 rect 4229 2492 4491 2508
 rect 4229 2471 4483 2492
-rect 4480 2018 4490 2034
-rect 4470 1917 4490 1957
+rect 4457 2034 4484 2037
+rect 4457 2018 4490 2034
+rect 4457 2017 4484 2018
+rect 4447 1961 4490 2001
 rect 1561 1064 1564 1075
 rect 1655 1064 1658 1075
 rect 1561 1061 1658 1064
 rect 1070 547 1521 606
 rect 1070 508 1086 547
 rect 1544 531 1554 1056
+rect 4388 596 4490 612
 rect 1544 512 1557 531
 rect 1574 524 1661 535
 rect 1621 510 1661 524
+rect 4388 510 4404 596
 << m2contact >>
 rect 3784 4388 3791 4418
 rect 3216 4368 3220 4372
@@ -1254,7 +1258,7 @@ transform 0 -1 5000 1 0 2263
 box -2 0 476 513
 use 50K_resistor  50K_resistor_0
 timestamp 1418811347
-transform -1 0 4624 0 -1 2218
+transform -1 0 4601 0 -1 2225
 box 143 188 207 270
 use inpad  inpad_16
 timestamp 1259953556
@@ -1328,11 +1332,11 @@ use padframe_right  padframe_right_0
 timestamp 1259953556
 transform 1 0 4487 0 1 367
 box 0 2 511 4264
-use blankpad  blankpad_0
+use barepad  barepad_0
 timestamp 1259953556
 transform 0 -1 5000 1 0 367
 box -2 0 476 513
-use blankpad  blankpad_20
+use barepad  barepad_1
 timestamp 1259953556
 transform 1 0 4159 0 1 0
 box -2 0 476 513
