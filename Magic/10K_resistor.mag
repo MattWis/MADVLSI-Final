@@ -1,0 +1,18 @@
+magic
+tech scmos
+timestamp 1418810875
+<< electrode >>
+rect 189 254 194 256
+rect 189 202 194 204
+<< genericpoly2contact >>
+rect 189 256 194 263
+rect 189 195 194 202
+<< metal1 >>
+rect 188 255 195 264
+rect 188 194 195 203
+<< high_resist >>
+rect 187 204 189 254
+rect 194 204 196 254
+<< poly2_high_resist >>
+rect 189 204 194 254
+<< end >>
