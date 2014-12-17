@@ -1,0 +1,17 @@
+magic
+tech scmos
+timestamp 1418811347
+<< metal1 >>
+rect 143 261 154 270
+rect 160 261 180 270
+rect 186 261 206 270
+rect 147 200 167 209
+rect 173 200 193 209
+rect 199 197 206 209
+rect 143 188 206 197
+use 10K_resistor  10K_resistor_0
+array 0 4 13 0 0 70
+timestamp 1418810875
+transform 1 0 -41 0 1 6
+box 187 194 196 264
+<< end >>
