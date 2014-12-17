@@ -1,0 +1,12 @@
+magic
+tech scmos
+timestamp 1418788810
+use DAC_no_resistors  DAC_no_resistors_0
+timestamp 1418787195
+transform 1 0 80 0 1 11
+box -94 -7 155 500
+use DAC_resistors  DAC_resistors_0
+timestamp 1418788065
+transform 1 0 80 0 1 11
+box 155 -7 177 500
+<< end >>
